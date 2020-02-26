@@ -9,6 +9,4 @@ class ArticleManager extends Model
         return $this->getAll("articles","Article");
     }
 
-
-
 }

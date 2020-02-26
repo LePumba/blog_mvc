@@ -4,9 +4,9 @@
 class Article
 {
     private $_id;
-    private $_titre;
-    private $_contenu;
-    private $_date_creation;
+    private $_title;
+    private $_content;
+    private $_date;
 
     public function __construct(array $data)
     {
@@ -37,20 +37,20 @@ class Article
     public function setTitle($title)
     {
         if (is_string($title)){
-            $this->_titre = $title;
+            $this->_title = $title;
         }
     }
 
     public function setContent($content)
     {
         if (is_string($content)){
-            $this->_contenu = $content;
+            $this->_content = $content;
         }
     }
 
     public function setDate($date)
     {
-        $this->_date_creation = $date;
+        $this->_date = $date;
     }
 
     //getters
@@ -62,16 +62,16 @@ class Article
 
     public function title()
     {
-            return $this->_titre;
+            return $this->_title;
     }
 
     public function content(){
-            return $this->_contenu;
+            return $this->_content;
     }
 
     public function date()
     {
-            return $this->_date_creation;
+            return $this->_date;
     }
 
 
