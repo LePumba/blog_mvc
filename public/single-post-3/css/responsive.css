@@ -39,7 +39,7 @@
 	--------------------------------- */
 
 	.main-post .post-top-area,
-	.main-post .post-bottom-area{ margin: 0 0px; }
+	.main-post .post-bottom-area{ margin: 0 0; }
 
 	/* ---------------------------------
 	7. SIDEBAR AREA
@@ -48,7 +48,7 @@
 	.info-area{ padding: 30px 0; }
 	
 	.info-area .sidebar-area,
-	.info-area .tag-area{ padding-left: 0px; }
+	.info-area .tag-area{ padding-left: 0; }
 
 	
 }
@@ -115,7 +115,7 @@
 	10. FOOTER
 	--------------------------------- */
 
-	footer{ padding: 40px 0 0px; margin-top: 0px; }
+	footer{ padding: 40px 0 0; margin-top: 0; }
 
 	
 }

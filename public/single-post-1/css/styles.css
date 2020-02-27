@@ -70,11 +70,11 @@ header{ font-weight: 400; }
 
 .card{ background: transparent; border: 0; }
 
-.no-side-padding{ padding-right: 0px; padding-left: 0px; }
+.no-side-padding{ padding-right: 0; padding-left: 0; }
 
-.no-left-padding{ padding-left: 0px; }
+.no-left-padding{ padding-left: 0; }
 
-.no-right-padding{ padding-right: 0px; }
+.no-right-padding{ padding-right: 0; }
 
 .icon{ font-size: 2em; }
 
@@ -93,7 +93,7 @@ header{ font-weight: 400; }
 3. MENU
 --------------------------------- */
 
-header{ overflow: hidden; background: #fff; box-shadow: 0px 2px 10px rgba(0,0,0, .3); }
+header{ overflow: hidden; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0, .3); }
 
 header .logo{ float: left; height: 20px; margin: 20px 30px; }
 
@@ -122,7 +122,7 @@ header .src-area{ position: relative; height: 60px; width: 50%; float: right; di
 header .src-area .src-input{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%;
 	padding: 0 20px 0 70px; background: transparent; border: 0; outline: 0; }
 
-header .src-area .src-input:focus{ box-shadow: 0px 0px 1px #aaa; }
+header .src-area .src-input:focus{ box-shadow: 0 0 1px #aaa; }
 
 header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width: 40px; background: none; border: 0; 
 	font-size: 1.2em; outline: 0; margin-left: 20px; opacity: .6; cursor: pointer; z-index: 10; }
@@ -150,12 +150,12 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 5. BLOG POST
 --------------------------------- */
 
-.post-area{ box-shadow: 0px 0px 5px rgba(0,0,0,.1); border-bottom: 1px solid #eee; background: #fff; }
+.post-area{ box-shadow: 0 0 5px rgba(0,0,0,.1); border-bottom: 1px solid #eee; background: #fff; }
 
 .post-area .post-info{ position: relative; padding: 30px 0; }
 
 .post-area .post-info .left-area{ height: 70px; width: 70px; border-radius: 100px; overflow: hidden; position: absolute;
-	top: 50%; margin-top: -35px; border: 6px	solid #fff; box-shadow: 0px 0px 5px rgba(0,0,0,.3); }
+	top: 50%; margin-top: -35px; border: 6px	solid #fff; box-shadow: 0 0 5px rgba(0,0,0,.3); }
 
 .post-area .post-info .middle-area{ padding-left: 90px; display: inline-block; }
 

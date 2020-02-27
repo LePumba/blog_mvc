@@ -38,10 +38,10 @@
 	6. MAIN POST ( LEF AREA )
 	--------------------------------- */
 	
-	.main-post{ border-right: 0px ; }
+	.main-post{ border-right: 0 ; }
 	
 	.main-post .blog-post-inner,
-	.main-post .post-icons-area{ padding-right: 0px; }
+	.main-post .post-icons-area{ padding-right: 0; }
 	
 	
 	
@@ -113,7 +113,7 @@
 	10. FOOTER
 	--------------------------------- */
 
-	footer{ padding: 40px 0 0px; margin-top: 0px; }
+	footer{ padding: 40px 0 0; margin-top: 0; }
 
 	
 }
