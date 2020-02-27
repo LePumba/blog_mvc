@@ -1,4 +1,5 @@
 <?php
+require_once 'views/View.php';
 
 class Router
 {
@@ -22,7 +23,7 @@ class Router
             //fonction de la valeur de cette variable
             if (isset($_GET['url'])){
                 //décompose l'url et lui applique un filtre
-                $url = explode('/', filter_var($_GET['utrl'],FILTER_SANITIZE_URL));
+                $url = explode('/', filter_var($_GET['url'],FILTER_SANITIZE_URL));
                 //
                 //récupère le premier paramètre de l'url
                 //le met tout en minuscule
@@ -59,7 +60,8 @@ class Router
 
         }catch (\Exception $e){
             $errorMsg = $e->getMessage();
-            require_once('views/viewError.php');
+            $this->_view = new View('Error');
+            $this->_view->generate(array('errorMsg' => $errorMsg));
         }
     }
 }

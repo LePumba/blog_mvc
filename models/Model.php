@@ -34,8 +34,7 @@ abstract class Model
 
         $this->getBdd();
         $var = [];
-        $req = (new PDO)->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
-        //$req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
+        $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
         $req->execute();
 
         //on vas crée la variable data qui
