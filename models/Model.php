@@ -34,18 +34,18 @@ abstract class Model
 
         $this->getBdd();
         $var = [];
-        $req = self::$_bdd->prepare('SELECT * FROM '.$table.' ORDER BY id desc');
-        $req->execute();
+        $req = self::$_bdd->PDO::prepare('SELECT * FROM '.$table.' ORDER BY id desc');
+        $req-> PDOStatement::execute();
 
         //on vas crée la variable data qui
         // vas contenir les données
-        while ($data = $req->fetch(PDO::FETCH_ASSOC))
+        while ($data = $req->PDO::fetch(PDO::FETCH_ASSOC))
         {
             //$var contiendra les données sous forme d'objets
             $var[] = new $obj($data);
         }
 
-        $req->closeCursor();
+        $req->PDO::closeCursor();
 
         return $var;
 
