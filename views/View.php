@@ -38,10 +38,9 @@ class View
 
             //arrêter la temporisation
             return ob_get_clean();
-        }
-            else
-                {
-                    throw new \Exception("Fichier ".$file." introuvable", 1);
-                }
+        } else
+            {
+                throw new \Exception("Fichier ".$file." introuvable", 1);
+            }
     }
 }
